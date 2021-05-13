@@ -1,0 +1,91 @@
+.container {
+  width: 1000px;
+  height: 250px;
+
+  padding: 4em;
+  display: flex;
+}
+
+.logo {
+  height: 200px;
+  width: 33%;
+  padding: 2em;
+  position: relative;
+  bottom: 50px;
+}
+.infobox {
+  width: 77%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+}
+.title {
+  font-family: monospace;
+  font-size: 36px;
+  font-weight: 400;
+}
+.title::after {
+  content: url(/assets/check-mark.png);
+}
+
+.follow {
+  font-family: monospace;
+  font-weight: bolder;
+}
+
+.bio {
+  display: flex;
+}
+
+.profiles {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: flex-end;
+  justify-content: space-around;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  /* position: absolute; */
+  top: 240px;
+  right: 394px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.mid-text {
+  padding-top: 25px;
+}
+.stats {
+  display: flex;
+  width: 77%;
+  margin: 0px;
+}
+
+.stats li {
+  padding-right: 25px;
+  margin: 0px;
+}
+
+.toprow {
+  display: flex;
+  align-items: center;
+}
+
+.title,
+.follow,
+.dot {
+  padding-right: 30px;
+}
+.followedby {
+  font-size: small;
+  color: gray;
+  padding-top: 10px;
+}
